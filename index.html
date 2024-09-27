@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mordab Telecom - Daily Transaction</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="mt-4">Mordab Telecom</h2>
+    <h4>Daily Transaction</h4>
+    <p id="dateTime"></p>
+
+    <form id="telecomForm">
+      <h1>Mordab Telecom</h1>
+      <h2>Daily Transaction</h2>
+      <div id="dateTime"></div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Row Name</th>
+              <th>In</th>
+              <th>Out</th>
+              <th>Balance</th>
+              <th>Cash</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Memory Row -->
+            <tr>
+              <td>Memory</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="memoryIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="memoryOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="memoryBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="memoryCash" readonly></td>
+            </tr>
+
+            <!-- Banglalink Row -->
+            <tr>
+              <td>Banglalink</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="banglalinkIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="banglalinkOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="banglalinkBalance" readonly>
+              </td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="banglalinkCash" readonly></td>
+            </tr>
+
+            <!-- Grameenphone Row -->
+            <tr>
+              <td>Grameenphone</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="grameenphoneIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="grameenphoneOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="grameenphoneBalance" readonly>
+              </td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="grameenphoneCash" readonly>
+              </td>
+            </tr>
+
+            <!-- Robi Row -->
+            <tr>
+              <td>Robi</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="robiIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="robiOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="robiBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="robiCash" readonly></td>
+            </tr>
+
+            <!-- Airtel Row -->
+            <tr>
+              <td>Airtel</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="airtelIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="airtelOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="airtelBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="airtelCash" readonly></td>
+            </tr>
+
+            <!-- Bkash Row -->
+            <tr>
+              <td>Bkash</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="bkashIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="bkashOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="bkashBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="bkashCash" readonly></td>
+            </tr>
+
+            <!-- Nagad Row -->
+            <tr>
+              <td>Nagad</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="nagadIn" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="nagadOut" required></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="nagadBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="nagadCash" readonly></td>
+            </tr>
+
+            <!-- Total Row -->
+            <tr>
+              <td>Total</td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="totalIn" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="totalOut" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="totalBalance" readonly></td>
+              <td><input type="number" class="form-control" placeholder="0" value="" id="totalCash" readonly></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+
+    <div id="message"></div>
+
+  </div>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
